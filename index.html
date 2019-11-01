@@ -28,21 +28,13 @@
   <option value="black">Black</option>
 </select>
 
-<script>
-var select = document.querySelector('select');
-var html = document.querySelector('html');
-document.body.style.padding = '10px';
+<label for="theme">Select theme: </label>
+<select id="theme">
+  <option value="white">White</option>
+  <option value="black">Black</option>
+</select>
 
-function update(bgColor, textColor) {
-  html.style.backgroundColor = bgColor;
-  html.style.color = textColor;
-}
-
-select.onchange = function() {
-  ( select.value === 'black' ) ? update('black','white') : update('white','black');
-}
-
-</script>
+<script src="js/color.js"></script>
 			
 <img src="HarrisCoverImage.jpg" alt="Main Image" width="500" height="100">
 
