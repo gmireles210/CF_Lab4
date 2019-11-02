@@ -4,13 +4,12 @@
 		<title>Harris AN/PRC 150 Radio Set-up</title>
 	</head>
 
-<body>
+		<body>
 
 <style>
-	
 .How {
     background-color: olive;
-    color: black;
+    color: white;
     padding: 20px;
 } 
 
@@ -21,38 +20,85 @@
  }
 
 </style>
-	
+
 <label for="theme">Select theme: </label>
 <select id="theme">
   <option value="white">White</option>
   <option value="black">Black</option>
 </select>
 
-<script src="js/color.js"></script>
-			
-<img src="HarrisCoverImage.jpg" alt="Main Image" width="500" height="100">
 
-<h1>How to Properly Set-up the 150 HF Radio</h1>
+<script src="js/color.js"></script>
+<script src="js/orderform.js"></script>
+
+			<img src="HarrisCoverImage.jpg" alt="Main Image" width="500" height="100">
+
+	<h1>How to Properly Set-up the 150 HF Radio</h1>
 	<hr>
 
-	<h2 class="How">How to Connect a Power Source</h2>
-	<a href="Harris2.html">Connecting Batteries with Battery Box</a>
+			<h2 class="How">How to Connect a Power Source</h2>
+			<a href="Harris2.HTML">Connecting Batteries with Battery Box</a>
 
-	<h2 class="How">How to Connect the Antenna</h2>
-	<a href="Harris3.html">Connecting an Antenna</a>
+			<h2 class="How">How to Connect the Antenna</h2>
+			<a href="Harris3.HTML">Connecting an Antenna</a>
 
-	<h2 class="How">How to Turn on the Radio</h2>
-	<a href="Harris4.html">Turning Radio ON</a>
+			<h2 class="How">How to Turn on the Radio</h2>
+			<a href="Harris4.HTML">Turning Radio ON</a>
 
-	<h2 class="How">Example of One Type of Complete Configuration</h2>
-	<a href="https://www.harris.com/solution/harris-falcon-ii-an-prc-150c-high-frequency-manpack-radio"><img src="https://www.harris.com/sites/default/files/images/solution/an-prc-150c-type-1-hf-radio-3.jpg"alt="Complete Setup" width="500" height="300"></a>
-	<p>Click above image to navigate to Harris 150 specific web page.</p>
+			<h2 class="How">Example of One Type of Complete Configuration</h2>
+			<a href="https://www.harris.com/solution/harris-falcon-ii-an-prc-150c-high-frequency-manpack-radio"><img src="https://www.harris.com/sites/default/files/images/solution/an-prc-150c-type-1-hf-radio-3.jpg"alt="Complete Setup" width="500" height="300"></a>
+			<p>Click above image to navigate to Harris 150 specific web page.</p>
+	
 
 
-<hr class="myelement">
-<h3>Link to Main Harris Website</h3>
-<a href="https://www.harris.com">Main Harris Website</a>
 
-</body>
+<h2 style="font-size:24Pt"><b>Place your AN/PRC-150 Radio order:</b></h2>
+
+<form method="post" action="#" name="radiosorderform" id="radiosorderform" onsubmit="return validate()">
+
+<table>
+
+<tr>
+<td><label for="Radios_quantity"><b>AN/PRC-150</b></label></td>
+<td><img src="FacePlate.jpg" width="400" height="200"/></img></td>
+<td>$16,000<input type="hidden" id="Radios_price" value="16000.00"><br/>
+<select id="Radios_quantity" name="Radios_quantity" size="1">
+<option value="10">10</option>
+<option value="9">9</option>
+<option value="8">8</option>
+<option value="7">7</option>
+<option value="6">6</option>
+<option value="5">5</option>
+<option value="4">4</option>
+<option value="3">3</option>
+<option value="2">2</option>
+<option value="1">1</option>
+<option value="0" selected>0</option>
+</select>
+</td>
+</tr>
+
+<tr id="tablefoot"><td>Total:</td><td colspan="2" id="totalerr"><td id="finaltotal"></td></tr>
+
+</table>
+
+<p><b><label for="yourname">Your Full Name:</label>
+<input name="yourname" id="yourname" type="text">
+<span id="nameerr"></span></b></p>
+<p><b><label for="youremail">Your E-Mail Address to Confirm the Order:</label>
+<input name="youremail" id="youremail" type="text">
+<span id="emailerr"></span></b></p>
+
+<div><input id="submit" type="submit" value="Place Order"/>
+<input id="reset" type="reset" value="Clear Order"/>
+<br/ >
+
+
+			<hr class="myelement">
+			<h3>Link to Main Harris Website</h3>
+			<a href="https://www.harris.com">Main Harris Website</a>
+
+		</body>
 
 </html>
+
